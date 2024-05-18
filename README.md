@@ -1,71 +1,120 @@
 # Zoung-entreprise-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location de Machines de Construction</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Location de Machines de Construction</h1>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#machines">Machines à Louer</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#a-propos">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    <section id="accueil">
-        <h2>Bienvenue chez [Nom de l'Entreprise]</h2>
-        <p>Nous offrons une large gamme de machines de construction à louer pour tous vos besoins.</p>
-    </section>
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
-    <section id="machines">
-        <h2>Nos Machines à Louer</h2>
-        <div class="machine">
-            <img src="chemin/vers/image1.jpg" alt="Machine 1">
-            <h3>Machine 1</h3>
-            <p>Description de la machine 1</p>
-        </div>
-        <div class="machine">
-            <img src="chemin/vers/image2.jpg" alt="Machine 2">
-            <h3>Machine 2</h3>
-            <p>Description de la machine 2</p>
-        </div>
-        <!-- Ajoute plus de machines ici -->
-    </section>
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <section id="services">
-        <h2>Nos Services</h2>
-        <p>Nous offrons des services de livraison et de maintenance pour toutes nos machines.</p>
-    </section>
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
 
-    <section id="a-propos">
-        <h2>À propos de Nous</h2>
-        <p>Découvrez l'histoire de notre entreprise et rencontrez notre équipe.</p>
-    </section>
+header nav ul li {
+    margin: 0 10px;
+}
 
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <form>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-    <footer>
-        <p>&copy; 2024 [Nom de l'Entreprise]. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+.header-right a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: yellow;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero form {
+    display: flex;
+    justify-content: center;
+}
+
+#hero input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+#hero button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    background-color: yellow;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+#promotion {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.promo-item {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-item h3 {
+    margin-top: 0;
+}
+
+.promo-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
