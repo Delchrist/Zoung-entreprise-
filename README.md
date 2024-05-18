@@ -1,120 +1,58 @@
 # Zoung-entreprise-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Machines de Construction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Experts en location</h1>
+            <nav>
+                <ul>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#vente">Vente</a></li>
+                    <li><a href="#succursales">Succursales</a></li>
+                    <li><a href="#actualites">Actualités</a></li>
+                    <li><a href="#loutec">LOU-TEC</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#english">English</a>
+                <a href="tel:18664LOUTEC">1 866 4LOU-TEC</a>
+                <a href="#client" class="btn">Portail Client</a>
+            </div>
+        </div>
+    </header>
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Trouver un produit de location</h2>
+            <form>
+                <input type="text" placeholder="Chercher un produit">
+                <button type="submit">Chercher</button>
+            </form>
+        </div>
+    </section>
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <section id="promotion">
+        <div class="promo-item">
+            <h3>L'énergie qui propulse vos projets</h3>
+            <p>20 à 2000 KW</p>
+            <img src="generatrice.jpg" alt="Génératrice">
+            <a href="#generatrices" class="btn">Découvrez nos génératrices</a>
+        </div>
+    </section>
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
+    <footer>
+        <p>&copy; 2024 [Nom de l'Entreprise]. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
 
-header nav ul li {
-    margin: 0 10px;
-}
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
-.header-right a {
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.btn {
-    background-color: yellow;
-    color: #333;
-    padding: 5px 10px;
-    border: none;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#hero form {
-    display: flex;
-    justify-content: center;
-}
-
-#hero input[type="text"] {
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    width: 300px;
-}
-
-#hero button {
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    background-color: yellow;
-    color: #333;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
-}
-
-#promotion {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-}
-
-.promo-item {
-    display: inline-block;
-    text-align: left;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.promo-item h3 {
-    margin-top: 0;
-}
-
-.promo-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
